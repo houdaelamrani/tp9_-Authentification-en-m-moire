@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 - Accès Refusé</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center min-vh-100 py-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="card border-0 shadow-lg p-5 rounded-4 bg-white">
+                    <div class="mb-3">
+                        <i class="bi bi-shield-x text-danger display-1"></i>
+                    </div>
+                    <h1 class="display-5 fw-bold text-danger mb-2">403</h1>
+                    <h3 class="fw-bold mb-3 text-dark">Accès Non Autorisé</h3>
+                    <p class="text-muted mb-4">
+                        Désolé, votre profil utilisateur ne dispose pas des privilèges ou rôles suffisants pour accéder à cette zone sécurisée.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a th:href="@{/}" class="btn btn-primary px-4 py-2 fw-semibold d-flex align-items-center gap-2">
+                            <i class="bi bi-house"></i> Accueil
+                        </a>
+                        <form th:action="@{/logout}" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-outline-secondary px-4 py-2 fw-semibold d-flex align-items-center gap-2">
+                                <i class="bi bi-box-arrow-right"></i> Changer de compte
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
