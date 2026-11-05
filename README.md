@@ -1,7 +1,7 @@
 # 🛡️ TP Spring Security : Authentification en Mémoire (In-Memory Authentication)
 
 > **Projet :** Portail Académique & Pédagogique Sécurisé  
-> **Institution :** Faculté des Sciences et Techniques (FSTG)  
+> **Institution :**     EMSI 
 > **Technologies :** Java 17+, Spring Boot 3.3.x, Spring Security 6, Thymeleaf, Bootstrap 5, Maven  
 
 ---
